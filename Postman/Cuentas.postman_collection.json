@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "438624a3-d9a6-42fe-94c7-2c301f2bf16a",
+		"name": "Cuentas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24005528"
+	},
+	"item": [
+		{
+			"name": "CrearCuenta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"numero\": \"555555\",\r\n  \"tipo\": 1,\r\n  \"saldo\": 2000,\r\n  \"clienteId\": 8\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/Cuenta",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"Cuenta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditarCuenta",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"numero\": \"555555\",\r\n  \"estado\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/Cuenta/555555",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"Cuenta",
+						"555555"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

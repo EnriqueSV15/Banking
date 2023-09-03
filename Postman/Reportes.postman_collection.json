@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "7908b3ff-4824-4c56-bdf6-d9bd1b861964",
+		"name": "Reportes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24005528"
+	},
+	"item": [
+		{
+			"name": "MovientoPorClientePorRangoFechas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/Reporte?fechaIni=2023-09-02&fechaFin=2023-09-03&clienteId=8",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"Reporte"
+					],
+					"query": [
+						{
+							"key": "fechaIni",
+							"value": "2023-09-02"
+						},
+						{
+							"key": "fechaFin",
+							"value": "2023-09-03"
+						},
+						{
+							"key": "clienteId",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

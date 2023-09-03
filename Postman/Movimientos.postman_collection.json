@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "cacc1b06-f17a-4771-a53f-6fd2becc9715",
+		"name": "Movimientos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24005528"
+	},
+	"item": [
+		{
+			"name": "InsertarMovimiento",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const moment = require('moment');\r",
+							"//2023-09-02T20:49:30.826Z\r",
+							"var orderTimestamp = moment().format(\"YYYY-MM-DDThh:mm:ss.msZ\");\r",
+							"pm.environment.set(\"fecha_movimiento\",orderTimestamp);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"fecha\": \"{{fecha_movimiento}}\",\r\n  \"valor\": -200,\r\n  \"numero\": \"555555\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/Movimiento",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"Movimiento"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
