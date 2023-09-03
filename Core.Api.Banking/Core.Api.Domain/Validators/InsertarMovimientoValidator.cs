@@ -20,6 +20,7 @@ namespace Core.Api.Domain.Validators
             RuleFor(command => command.Valor)
                 .NotEmpty()
                 .NotNull()
+                .NotEqual(0)
                 .WithMessage("El valor no es válido");
 
             RuleFor(command => command.Numero)

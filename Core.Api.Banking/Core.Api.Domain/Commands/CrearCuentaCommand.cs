@@ -14,7 +14,6 @@ namespace Core.Api.Domain.Commands
         public required string Numero { get; set; }
         public TipoCuenta Tipo { get; set; }
         public decimal Saldo { get; set; }
-        public bool Estado { get; set; }
         public int ClienteId { get; set; }
     }
 }

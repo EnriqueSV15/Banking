@@ -1,4 +1,5 @@
 ﻿using Core.Api.Domain.Commands;
+using Core.Api.Domain.Enums;
 using FluentValidation;
 using System;
 using System.Collections.Generic;
@@ -17,15 +18,14 @@ namespace Core.Api.Domain.Validators
                 .NotNull()
                 .WithMessage("El número de cuenta no es válido");
 
-            RuleFor(command => command.Saldo)
-                .NotEmpty()
-                .NotNull()
-                .WithMessage("El saldo no es válido");
+            RuleFor(command => command.Tipo)
+                .IsInEnum()
+                .WithMessage("El tipo de cuenta no es válido.");
 
-            RuleFor(command => command.Estado)
-                .NotEmpty()
+            RuleFor(command => command.Saldo)
                 .NotNull()
-                .WithMessage("El estado no es válido");
+                .GreaterThanOrEqualTo(0)
+                .WithMessage("El saldo no es válido");
 
             RuleFor(command => command.ClienteId)
                 .NotEmpty()

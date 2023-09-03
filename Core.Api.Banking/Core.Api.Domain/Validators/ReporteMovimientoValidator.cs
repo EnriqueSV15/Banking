@@ -17,7 +17,10 @@ namespace Core.Api.Domain.Validators
                 .WithMessage("La fecha de inicio no puede ser mayor a la fecha final");
 
             RuleFor(query => query.ClienteId)
-                .GreaterThan(0);
+                .NotEmpty()
+                .NotNull()
+                .GreaterThan(0)
+                .WithMessage("El cliente no es válido");
         }
     }
 }
