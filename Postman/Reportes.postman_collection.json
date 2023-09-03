@@ -12,7 +12,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_url}}/api/Reporte?fechaIni=2023-09-02&fechaFin=2023-09-03&clienteId=8",
+					"raw": "{{base_url}}/api/Reporte?fechaIni=2023-09-03&fechaFin=2023-09-03&clienteId=2",
 					"host": [
 						"{{base_url}}"
 					],
@@ -23,7 +23,7 @@
 					"query": [
 						{
 							"key": "fechaIni",
-							"value": "2023-09-02"
+							"value": "2023-09-03"
 						},
 						{
 							"key": "fechaFin",
@@ -31,7 +31,7 @@
 						},
 						{
 							"key": "clienteId",
-							"value": "8"
+							"value": "2"
 						}
 					]
 				}

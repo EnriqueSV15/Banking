@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"numero\": \"555555\",\r\n  \"tipo\": 1,\r\n  \"saldo\": 2000,\r\n  \"clienteId\": 8\r\n}",
+					"raw": "{\r\n  \"numero\": \"585545\",\r\n  \"tipo\": 1,\r\n  \"saldo\": 1000,\r\n  \"clienteId\": 1\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

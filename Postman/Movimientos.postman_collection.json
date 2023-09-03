@@ -27,7 +27,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"fecha\": \"{{fecha_movimiento}}\",\r\n  \"valor\": -200,\r\n  \"numero\": \"555555\"\r\n}",
+					"raw": "{\r\n  \"fecha\": \"{{fecha_movimiento}}\",\r\n  \"valor\": -540,\r\n  \"numero\": \"496825\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
