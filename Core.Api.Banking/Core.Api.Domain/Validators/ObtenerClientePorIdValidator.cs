@@ -14,8 +14,9 @@ namespace Core.Api.Domain.Validators
         {
             RuleFor(query => query.Id)
                 .NotEmpty()
-                .NotNull();
-
+                .NotNull()
+                .GreaterThan(0)
+                .WithMessage("El código del cliente no es válido");
         }
     }
 }
