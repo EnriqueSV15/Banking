@@ -28,12 +28,12 @@ namespace Core.Api.Domain.Validators
                 .NotNull()
                 .Length(1)
                 .Must(genero => genero == "M" || genero == "F")
-                .WithMessage("El genero no es válido");
+                .WithMessage("El género no es válido");
 
             RuleFor(command => command.Edad)
                 .NotEmpty()
                 .NotNull()
-                .GreaterThan(18)
+                .GreaterThanOrEqualTo(18)
                 .WithMessage("El edad no es válida");
 
             RuleFor(command => command.Identificacion)
